@@ -46,7 +46,7 @@ def calculator(oil_price) -> None:
 
     while True:
         choice = int(input('請選擇公升為主(0)or價格為主(1)：'))
-        if choice == 0:  # Fellow the litre.
+        if choice == 0:  # Follow the litre.
             oil = float(input('請輸入欲加的公升數：'))
             pay_price = round(discount * oil)
 
@@ -68,7 +68,7 @@ def calculator(oil_price) -> None:
             print(f'可以省下金額：{save_money_list}')
             break
 
-        elif choice == 1:  # Fellow the price.
+        elif choice == 1:  # Follow the price.
             pay_price = int(input('請輸入欲花費的金額：'))
             pay_price = float(pay_price) + 0.5
             for i in range(5):
